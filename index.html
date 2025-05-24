@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Ciro Bezerra Dev</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: #2c3e50;
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .left-column {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .right-column {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info div {
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+            color: #3498db;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-tag {
+            background-color: #3498db;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .experience-item {
+            margin-bottom: 2rem;
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .date {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+        }
+
+        .print-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @media print {
+            .print-button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Ciro Bruno Bezerra e Silva</h1>
+            <p>Tecnólogo em Análise e Desenvolvimento de Sistemas</p>
+        </header>
+
+        <main class="main-content">
+            <div class="left-column">
+                <section class="section contact-info">
+                    <h2>Contato</h2>
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        +55 (84) 92000.0872
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        cirobezerradev@gemail.com
+                    </div>
+                    <div>
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/ciro-bezerra-8b7087276/">Linkedin</a>    
+                    </div>
+                    <div>
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/cirobezerradev">github.com/cirobezerradev</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Caicó, RN
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Habilidades</h2>
+                    <div class="skills">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Framework Django</span>
+                        <span class="skill-tag">FrameWork Flask</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Excel Básico</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Formação</h2>
+                    <div class="experience-item">
+                        <h3>Universidade Estácio de Sá - UNESA</h3>
+                        <p class="date">Cursando...</p>
+                        <p class="date">Conclusão 09/2025</p>
+                        <p> Tecnólogo em Análise e Desenvolvimento de Sistemas</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="right-column">
+                <section class="section">
+                    <h2>Sobre Mim</h2>
+                    <p>Profissional com sólida trajetória em gestão operacional e liderança de equipes, em transição para a área de Tecnologia com foco em Análise e Desenvolvimento de Sistemas. Minha experiência de 6 anos no Exército Brasileiro, gerenciando projetos de engenharia e infraestrutura, combinada com 9 anos na gestão industrial de produção, desenvolvi habilidades estratégicas em resolução de problemas complexos, planejamento e execução de projetos, otimização de processos operacionais, gestão de resursos e equipe.</p>
+                    <br>
+                    <p>Atualmente direcionando essa bagagem para o universo tecnológico, com ênfase em desenvolvimento de sistemas e automação de processos, análise de requisitos e modelagem de soluções.</p>
+                    <br>
+                    <p>Em processo de formação como Tecnólogo em Análise e Desenvolvimento de Sistemas, buscando aliar minha experiência prática em gestão operacional com novas competências em programação, bancos de dados e arquitetura de software para criar soluções tecnológicas eficientes e escaláveis.</p>
+                </section>
+
+                <section class="section">
+                    <h2>Experiência Profissional</h2>
+                    <div class="experience-item">
+                        <h3>Oficial Temporário do Exército Brasileiro</h3>
+                        <p class="date">2003 - 2009</p>
+                        <p>1º Batalhão de Engenharia de Construção</p>
+                        <ul>
+                            <li>Chefe do seção de serviços gerais de obras e instalações</li>
+                            <li>Chefe da equipe de perfuração de poços </li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <h3>Gerente de Produção</h3>
+                        <p class="date">2014 - 2023</p>
+                        <p>YK Industrializações</p>
+                        <ul>
+                            <li>Gerenciamento de produção de itens refratários</li>
+                            <li>Desenvolvimento de métodos de produção</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Projetos</h2>
+                    <div class="experience-item">
+                        <h3>Sistema de controle de remessas para industrialização</h3>
+                        <p>Plataforma web para controle de remessas para industrialização usando Python e Framework Django</p>
+                        <a href="https://github.com/cirobezerradev/projeto_controle_remessas">Ver projeto no github</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <button class="print-button" onclick="window.print()">Imprimir/Salvar PDF</button>
+</body>
+</html>
